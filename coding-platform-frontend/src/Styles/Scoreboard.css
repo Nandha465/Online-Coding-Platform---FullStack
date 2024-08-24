@@ -1,0 +1,63 @@
+/* Container for the user scoreboard */
+.user-scoreboard {
+    padding: 20px;
+    display: grid;
+    flex-direction: column;
+
+}
+
+/* Pie chart container */
+.pie-chart-container {
+      align-items: left;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    /* padding-right: 50%; */
+  }
+  
+  .pie-chart-container h2 {
+    margin-bottom: 10px;
+    /* padding-right: 45px; */
+  }
+  
+  /* Summary container */
+  .user-summary-container {
+    width: 80%;
+    max-width: 800px;
+    padding-left: 45%;
+    padding-top:0%;
+  }
+  
+  /* Table styling */
+  .user-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .user-summary-table th, .user-summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-summary-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .user-summary-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-summary-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Total score styling */
+  .total-score {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

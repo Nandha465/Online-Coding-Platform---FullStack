@@ -1,0 +1,150 @@
+  
+  .App2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Problem Container */
+  .problem-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .problem-container h2 {
+    margin-top: 0;
+    color: #333;
+    /* text-align: left; */
+  }
+  
+  .problem-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  /* Editor Container */
+  .editor-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+  }
+  
+  .editor-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .run-button {
+    padding: 10px 20px;
+    background-color: #12ea5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .run-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .language-dropdown {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .code-editor {
+    flex: 1;
+    height: calc(100vh - 70px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .output-container {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .input-area {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+  }
+  
+  .output-section, .error-section {
+    margin-top: 10px;
+  }
+  
+  pre {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  .error-output {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .metrics-section p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .metrics-section {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .App {
+      flex-direction: column;
+    }
+  
+    .problem-container, .editor-container {
+      margin: 0;
+    }
+  
+    .code-editor {
+      height: 400px;
+    }
+  
+    .problem-container {
+      height: auto;
+    }
+  
+    .editor-container {
+      height: auto;
+    }
+  }

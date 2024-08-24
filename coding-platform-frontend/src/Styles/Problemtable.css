@@ -1,0 +1,53 @@
+/* Container for the table */
+.problem-table-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Table styling */
+  .problem-table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  
+  .problem-table th, .problem-table td {
+    border: 4px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .problem-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .problem-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .problem-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Solve button styling */
+  .solve-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .solve-button:hover {
+    background-color: #45a049;
+  }
+  .zoho{
+    font-size: 40px;
+    padding-right: 85%;
+  }

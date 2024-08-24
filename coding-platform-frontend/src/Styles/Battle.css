@@ -1,0 +1,95 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grid layout */
+.container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Individual container */
+.container-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 30% ;/* Three containers per row with spacing */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container-box:hover {
+  transform: translateY(-10px);
+}
+
+.container-image {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.container-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.container-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.container-button {
+  padding: 10px 20px;
+  background-color:rgb(18, 234, 90);;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container-button:hover {
+  background-color: #21a1f1;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+  .container-box {
+    width: calc(50% - 20px); /* Two containers per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-box {
+    width: 100%; /* One container per row */
+  }
+}
+.top-button {
+  position: absolute;
+  top: 110px; /* Adjust based on navbar height */
+  right: 50px;
+  padding: 10px 20px;
+  background-color:rgb(18, 234, 90);;
+  color: white;
+  border: none;
+  /* margin-bottom: 80%; */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.top-button:hover {
+  background-color: #21a1f1;
+}

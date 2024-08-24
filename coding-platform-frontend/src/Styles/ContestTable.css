@@ -1,0 +1,28 @@
+.event-table-container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-table th, .event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .event-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .event-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

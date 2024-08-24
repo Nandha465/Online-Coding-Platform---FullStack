@@ -1,0 +1,153 @@
+.App1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .editor-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    height: 730px;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+    overflow-y: auto;
+    position: static;
+  }
+  
+  .editor-header {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    z-index: 1;
+    padding: 15px 0px;
+  }
+  
+  .run-button {
+    padding: 10px 20px;
+    background-color: rgb(18, 234, 90);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .run-button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .language-dropdown {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .code-editor {
+    
+        flex: 1;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-top: 10px;
+        background-color: #fff; /* White background for the editor */
+        color: #000; /* Black text */
+        overflow: auto; /* Ensure scrollbars appear if content overflows */
+        padding: 10px; /* Add some padding for better readability */
+        font-family: monospace; /* Monospace font for code */
+      
+  }
+  
+  .output-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: #fff;
+    position: static; /* Ensure it flows with the document */
+    height: 50vh; /* Set a fixed height */
+  }
+  
+  .input-area {
+    width: 100%;
+    height: 30px; /* Decrease height */
+    margin-top: 20px; /* Adjust top margin */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+  }
+  
+  .output-section,
+  .error-section,
+  .metrics-section {
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  pre {
+    background-color: #282c34; /* Dark background */
+    color: #faf7f7; /* Black text */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  .error-output {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .play {
+    color: #333;
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .metrics-section p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .metrics-section {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .App1 {
+      flex-direction: column;
+    }
+  
+    .editor-container,
+    .output-container {
+      margin-right: 0;
+      padding-left: 0;
+    }
+  
+    .editor-container {
+      height: auto;
+    }
+  
+    .code-editor {
+      height: 400px; /* Adjust height for small screens */
+    }
+  
+    .output-container {
+      height: 300px; /* Fixed height to ensure no scrolling */
+      max-height: none; /* Remove maximum height constraint */
+    }
+  }
+  
